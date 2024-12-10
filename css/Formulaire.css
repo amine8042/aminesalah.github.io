@@ -1,0 +1,112 @@
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    color: #000000;
+    margin-right: 40px;
+}
+/* استايل عام */
+/* استايل عام */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* الحاوية */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الفورم */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* تنسيق الأقسام */
+.section {
+    margin-bottom: 30px;
+}
+
+/* تنسيق العناوين */
+h2 {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+/* تنسيق الحقول */
+label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* تنسيق أسئلة الاختبار */
+.quiz label {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.quiz div {
+    margin-bottom: 10px;
+}
+
+.quiz input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* تنسيق زر الإرسال */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* يمكنك تعديل الارتفاع حسب الحاجة */
+    overflow: hidden;
+}
+
+#bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يضمن أن الصورة تملأ المساحة بالكامل مع الحفاظ على نسبة العرض إلى الارتفاع */
+}

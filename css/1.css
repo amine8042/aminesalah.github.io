@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  html {
+	font-family: 'Poppins', Arial, sans-serif;
+	color: #f0f0f0;
+  }
+  
+  body {
+	min-height: 100vh;
+	background: #0b0d15;
+	color: #a2a5b3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+  }
+  
+  h1 {
+	color: white;
+  }
+  
+  .card {
+	width: 300px;
+	background: #1c1f2b;
+	text-align: center;
+	border-radius: 10px;
+	position: relative;
+	padding: 2em;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+	transform: translateY(-10px);
+  }
+  
+  @property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+  }
+  
+  .card::after, .card::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: conic-gradient(from var(--angle),
+	  blue 0% 40%, transparent, blue 50% 90%, transparent);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	padding: 3px;
+	border-radius: 10px;
+	animation: spin 7s linear infinite;
+  }
+  
+  .card::before {
+	filter: blur(1.5rem);
+	opacity: 0.5;
+  }
+  
+  @keyframes spin {
+	from {
+	  --angle: 0deg;
+	}
+	to {
+	  --angle: 360deg;
+	}
+  }
+  
